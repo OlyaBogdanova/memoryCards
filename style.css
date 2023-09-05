@@ -21,6 +21,7 @@ body {
 
 h1 {
   position: relative;
+  margin-bottom: 15px;
 }
 h1 button {
   position: absolute;
@@ -131,4 +132,55 @@ h1 button {
   font-weight: bold;
   font-size: 16px;
   color: #ddd;
+}
+
+.navigation {
+  display: flex;
+  margin: 20px 0;
+}
+.navigation p {
+  margin: 0 25px;
+}
+
+.nav-button {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-container {
+  opacity: 0;
+  background-color: #f0f0f0;
+  border-top: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  transition: 0.3s ease;
+}
+.add-container.show {
+  opacity: 1;
+  z-index: 2;
+}
+.add-container h3 {
+  margin: 10px 0;
+}
+
+.form-group label {
+  display: block;
+  margin: 20px 0 10px;
+}
+.form-group textarea {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px;
+  min-width: 500px;
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */
